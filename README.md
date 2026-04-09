@@ -2,6 +2,8 @@
 
 A simple full-stack task manager built with **React + Vite** (frontend) and **Node.js + Express** (backend).
 
+<img width="1184" height="577" alt="image" src="https://github.com/user-attachments/assets/d4d68051-0e26-4026-8961-7af17b70726a" />
+
 ---
 
 ## Setup & Run
