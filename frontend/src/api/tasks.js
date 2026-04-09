@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use relative path — Vite proxy forwards /tasks → http://localhost:3001/tasks
-const BASE = '/tasks';
+const BASE = 'https://task-manager-a8tt.onrender.com';
 
 export const fetchTasks = () =>
   axios.get(BASE).then((res) => res.data.data);
