@@ -33,9 +33,9 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/tasks` | Get all tasks (supports `?status=active\|completed`) |
-| POST | `/tasks` | Create a task — body: `{ "title": "string" }` |
-| PATCH | `/tasks/:id` | Update a task — body: `{ "title"?, "completed"? }` |
+| GET | `/tasks` | Get all tasks |
+| POST | `/tasks` | Create a task|
+| PATCH | `/tasks/:id` | Update a task |
 | DELETE | `/tasks/:id` | Delete a task |
 
 ### Response format
@@ -96,11 +96,3 @@ Task_Manager/
 
 ---
 
-## Assumptions & Trade-offs
-
-- **No database**: Tasks are stored in `backend/data/tasks.json`. Sufficient for this exercise; easy to swap for SQLite/MongoDB later.
-- **No auth**: Out of scope for this exercise.
-- **In-memory + file sync**: Tasks are kept in memory for fast reads and written to disk on every mutation.
-- **Client-side filtering**: Filtering is done on the frontend using the full tasks array already in state — avoids extra API calls.
-- **No Docker**: Not included per instructions.
-- **CORS**: Restricted to `http://localhost:5173` in development.
